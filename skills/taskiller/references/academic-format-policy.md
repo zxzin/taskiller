@@ -9,7 +9,7 @@ For academic or source-backed tasks:
 1. identify the assignment requirement
 2. identify the required citation style
 3. gather sufficient real sources
-4. log them in `runpro_workspace/10_analysis/source-log.md`
+4. log them in `taskiller_workspace/10_analysis/source-log.md`
 5. verify the source base
 6. only then begin writing or slide synthesis
 
@@ -68,7 +68,7 @@ For graded academic writing, source-backed reports, literature reviews, proposal
 
 Before full drafting:
 
-- build `runpro_workspace/10_analysis/rubric-ledger.md`
+- build `taskiller_workspace/10_analysis/rubric-ledger.md`
 - split the rubric, assignment brief, required questions, required sub-parts, teacher feedback, and format criteria into separate ledger items
 - record source, weight or importance, expected evidence, planned draft location, status, evidence, and repair action
 - use statuses `pass`, `partial`, `fail`, or `not assessable`
@@ -93,7 +93,7 @@ For source-backed academic writing, do not treat citation presence as proof of s
 
 Before and during drafting:
 
-- create or update `runpro_workspace/10_analysis/source-claim-audit.md`
+- create or update `taskiller_workspace/10_analysis/source-claim-audit.md`
 - map major factual, empirical, evaluative, and comparative claims to source support
 - check whether the cited source actually supports the specific claim attached to it
 - preserve direction, magnitude, units, sample, method, population, date range, and conditions when they matter

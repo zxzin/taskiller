@@ -48,7 +48,7 @@ If the final written deliverable format is not explicitly specified, treat `.doc
 
 If the final requirement is a Word-style deliverable, or the format defaults to Word, the final check should happen against the actual `.docx` delivery file whenever feasible.
 
-Only place the clean final `.docx` submission artifact in `runpro_workspace/submission/`. Keep markdown sources, drafts, template references, and helper variants in working or draft folders unless the assignment explicitly asks for them as deliverables.
+Only place the clean final `.docx` submission artifact in `taskiller_workspace/submission/`. Keep markdown sources, drafts, template references, and helper variants in working or draft folders unless the assignment explicitly asks for them as deliverables.
 
 ## Requirement-Locked Writing
 
@@ -64,9 +64,9 @@ Once the requirement lock is approved, treat these as binding when they are spec
 - required template or form
 - disallowed reuse of old drafts
 
-Before full drafting, capture the explicit file-based requirements into `runpro_workspace/10_analysis/requirement-ledger.md`.
+Before full drafting, capture the explicit file-based requirements into `taskiller_workspace/10_analysis/requirement-ledger.md`.
 
-For graded academic, source-backed written, formal report, literature review, proposal, or dissertation-style work, build `runpro_workspace/10_analysis/rubric-ledger.md` before full drafting.
+For graded academic, source-backed written, formal report, literature review, proposal, or dissertation-style work, build `taskiller_workspace/10_analysis/rubric-ledger.md` before full drafting.
 
 Rubric-ledger requirements:
 
@@ -109,8 +109,8 @@ If the document depends on real-world facts, citations, or literature:
 - collect real sources first
 - prefer sources from roughly the last five years unless the assignment or topic needs older seminal work
 - prefer high-impact, core-journal, review, guideline, or otherwise field-recognized sources when possible
-- record them in `runpro_workspace/10_analysis/source-log.md`
-- create or update `runpro_workspace/10_analysis/source-claim-audit.md` for major factual, empirical, evaluative, and comparative claims
+- record them in `taskiller_workspace/10_analysis/source-log.md`
+- create or update `taskiller_workspace/10_analysis/source-claim-audit.md` for major factual, empirical, evaluative, and comparative claims
 - write only from the verified source base
 - for scientific manuscripts, paper-derived reports, or figure-led academic writing, define the source/manuscript type, the one-sentence central claim, the main supporting evidence, and the boundary where the claim stops before full drafting
 - for scientific manuscript-style work, map each major section to one job such as context/problem, gap, approach/design, evidence, interpretation, implication, or limitation instead of defaulting to a generic essay shell or lab-diary order

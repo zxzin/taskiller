@@ -6,7 +6,7 @@
 
 很多学术任务不是“写一篇文章”这么简单。真实情况通常是：brief 一份、rubric 一张截图、旧稿一个、导师反馈几段、参考文献一堆、数据表一个，最后还要求交 Word、PPT、PDF、代码附件或整理好的 submission。
 
-`taskiller` 这套 skills 的入口是 `runpro`。它做的不是直接开写，而是先把项目读明白：
+安装后直接调用 `taskiller`。它做的不是直接开写，而是先把项目读明白：
 
 - 最后到底要交什么文件
 - rubric 和 brief 里有哪些硬要求
@@ -19,9 +19,9 @@
 
 ## 主要 skills
 
-### runpro
+### taskiller
 
-项目文件夹执行器。把 brief、rubric、旧稿、反馈、参考文献、截图、数据表都放进一个文件夹，然后调用 `runpro`。
+项目文件夹执行器。把 brief、rubric、旧稿、反馈、参考文献、截图、数据表都放进一个文件夹，然后调用 `taskiller`。
 
 它会先做 intake、可行性判断和需求锁定，再按项目类型走不同路线：报告、论文、PPT、数据分析、代码项目、混合交付物都可以分开处理。
 
@@ -56,13 +56,13 @@ project-folder/
 然后让 Codex 调用：
 
 ```text
-runpro
+taskiller
 ```
 
-`runpro` 会先还原任务和交付要求。确认后，它会创建工作区：
+`taskiller` 会先还原任务和交付要求。确认后，它会创建工作区：
 
 ```text
-runpro_workspace/
+taskiller_workspace/
 ├── 10_analysis/
 ├── 20_working/
 ├── 20_drafts/
@@ -92,5 +92,5 @@ cp -R skills/* ~/.codex/skills/
 然后在 Codex 里调用对应 skill，例如：
 
 ```text
-runpro
+taskiller
 ```

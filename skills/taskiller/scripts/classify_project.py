@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Infer the most likely project route for runpro.
+Infer the most likely project route for taskiller.
 """
 
 from __future__ import annotations

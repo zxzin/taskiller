@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Generate a route-specific execution playbook for runpro.
+Generate a route-specific execution playbook for taskiller.
 """
 
 from __future__ import annotations
@@ -26,7 +26,7 @@ PLAYBOOKS = {
             "Early correction if the provisional route is wrong",
         ],
         "recommended_skills": [
-            "$runpro",
+            "$taskiller",
             "Use branch-specific skills only if the project later resolves into a clear standard route",
         ],
         "exit_criteria": [
@@ -50,7 +50,7 @@ PLAYBOOKS = {
             "Handoff-ready clarity",
         ],
         "recommended_skills": [
-            "$runpro",
+            "$taskiller",
             "Use Google Docs tools if the target output is a native Google Doc",
         ],
         "exit_criteria": [
@@ -76,7 +76,7 @@ PLAYBOOKS = {
             "Preview-checked layout readability",
         ],
         "recommended_skills": [
-            "$runpro",
+            "$taskiller",
             "Use $pptpro for beautiful, designed, class-ready, or non-generic PPTX work",
             "Use $slides or PowerPoint tooling for editable PPTX generation",
             "Use Google Slides or Canva tools only when the target handoff requires them",
@@ -103,7 +103,7 @@ PLAYBOOKS = {
             "Clear handoff summary",
         ],
         "recommended_skills": [
-            "$runpro",
+            "$taskiller",
             "Use the most specific stack skill when one clearly matches the codebase",
         ],
         "exit_criteria": [
@@ -127,7 +127,7 @@ PLAYBOOKS = {
             "Repeatability",
         ],
         "recommended_skills": [
-            "$runpro",
+            "$taskiller",
             "Use Google Sheets tools when the live target is a sheet",
         ],
         "exit_criteria": [
@@ -151,7 +151,7 @@ PLAYBOOKS = {
             "Package coherence",
         ],
         "recommended_skills": [
-            "$runpro",
+            "$taskiller",
             "Use the branch-specific skill or tool that matches the primary route first",
         ],
         "exit_criteria": [

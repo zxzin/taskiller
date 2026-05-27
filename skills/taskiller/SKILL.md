@@ -1,5 +1,5 @@
 ---
-name: runpro
+name: taskiller
 description: Execute a project from a folder of raw materials. Use when the user drops messages, screenshots, documents, drafts, and references into a project directory and wants Codex to identify the real goal, build a plan, do the work, drive the project to a submission-ready state, verify completion, and return a clear final summary of what was required, what was completed, and how it was done.
 ---
 
@@ -25,7 +25,7 @@ The goal is not to mirror a human manual workflow. The goal is to minimize user 
 
 Default principle:
 
-- the user should only need to point at a project folder or invoke `$runpro`
+- the user should only need to point at a project folder or invoke `$taskiller`
 - the skill should infer as much as safely possible
 - explicit questions should be reserved for high-impact ambiguity only
 - execution should continue until the project reaches a real handoff state
@@ -213,9 +213,9 @@ For literature or research writing:
 1a. if the task is a scientific manuscript, paper-derived report, lab-style results write-up, journal-style section draft, or other evidence-led academic writing, identify the manuscript/source type, define the one-sentence central claim, list the evidence that supports it, and define the boundary where the claim stops before full drafting
 2. prefer a source base centered on recent literature from roughly the last five years
 3. prefer higher-impact, core-journal, guideline, review, or otherwise authoritative sources when available
-4. record them in `runpro_workspace/10_analysis/source-log.md`
+4. record them in `taskiller_workspace/10_analysis/source-log.md`
 5. verify that the source base is sufficient
-6. for source-backed written submissions, create or update `runpro_workspace/10_analysis/source-claim-audit.md` with the major factual, empirical, evaluative, and comparative claims
+6. for source-backed written submissions, create or update `taskiller_workspace/10_analysis/source-claim-audit.md` with the major factual, empirical, evaluative, and comparative claims
 7. only then write the literature-backed content
 
 For scientific-manuscript or paper-derived writing:
@@ -371,7 +371,7 @@ If the user did not provide a clean kickoff note, create one from the source mat
 The preferred invocation is minimal:
 
 - user points to a project folder
-- user says to run `$runpro`
+- user says to run `$taskiller`
 
 Optional kickoff details help, but are not required.
 
@@ -388,32 +388,32 @@ The skill should default to:
 
 Load [project-state-files.md](./references/project-state-files.md) and maintain these files unless the project already has a better equivalent:
 
-All generated files should live under `runpro_workspace/` by default.
+All generated files should live under `taskiller_workspace/` by default.
 
-Keep the clean handoff folder at `runpro_workspace/submission/` so the user can open the runpro workspace and see the submission folder immediately without drilling into deeper delivery layers.
+Keep the clean handoff folder at `taskiller_workspace/submission/` so the user can open the taskiller workspace and see the submission folder immediately without drilling into deeper delivery layers.
 
-`runpro_workspace/submission/` is only for the actual submission package.
+`taskiller_workspace/submission/` is only for the actual submission package.
 
 Do not place drafts, markdown working files, template reference files, style exemplars, audits, notes, helper exports, or duplicate variants there unless the assignment explicitly requires them in the final submission package.
 
 For written deliverables, if the assignment does not explicitly require another final format, default the final submission artifact to `Word/.docx`.
 
-- `runpro_workspace/10_analysis/project-inventory.md`
-- `runpro_workspace/10_analysis/project-intake.md`
-- `runpro_workspace/10_analysis/project-brief.md`
-- `runpro_workspace/10_analysis/requirement-ledger.md`
-- `runpro_workspace/10_analysis/rubric-ledger.md`
-- `runpro_workspace/10_analysis/feasibility-check.md`
-- `runpro_workspace/10_analysis/project-routing.md`
-- `runpro_workspace/10_analysis/route-playbook.md`
-- `runpro_workspace/10_analysis/source-log.md`
-- `runpro_workspace/10_analysis/source-claim-audit.md`
-- `runpro_workspace/10_analysis/approval-gate.md`
-- `runpro_workspace/10_analysis/execution-plan.md`
-- `runpro_workspace/10_analysis/delivery-checklist.md`
-- `runpro_workspace/10_analysis/final-audit.md`
-- `runpro_workspace/10_analysis/remediation-log.md`
-- `runpro_workspace/10_analysis/final-summary.md`
+- `taskiller_workspace/10_analysis/project-inventory.md`
+- `taskiller_workspace/10_analysis/project-intake.md`
+- `taskiller_workspace/10_analysis/project-brief.md`
+- `taskiller_workspace/10_analysis/requirement-ledger.md`
+- `taskiller_workspace/10_analysis/rubric-ledger.md`
+- `taskiller_workspace/10_analysis/feasibility-check.md`
+- `taskiller_workspace/10_analysis/project-routing.md`
+- `taskiller_workspace/10_analysis/route-playbook.md`
+- `taskiller_workspace/10_analysis/source-log.md`
+- `taskiller_workspace/10_analysis/source-claim-audit.md`
+- `taskiller_workspace/10_analysis/approval-gate.md`
+- `taskiller_workspace/10_analysis/execution-plan.md`
+- `taskiller_workspace/10_analysis/delivery-checklist.md`
+- `taskiller_workspace/10_analysis/final-audit.md`
+- `taskiller_workspace/10_analysis/remediation-log.md`
+- `taskiller_workspace/10_analysis/final-summary.md`
 
 These files are the control surface for the project:
 
@@ -502,7 +502,7 @@ When missing information consists only of personal identity fields such as stude
 
 If the project type is still unclear after scanning, state the ambiguity in `project-brief.md` and choose the most conservative workable interpretation.
 
-Before moving on, create `runpro_workspace/10_analysis/requirement-ledger.md`.
+Before moving on, create `taskiller_workspace/10_analysis/requirement-ledger.md`.
 
 Requirement-ledger rules:
 
@@ -513,7 +513,7 @@ Requirement-ledger rules:
 
 If the project meets the default `strict mode` triggers, mark that explicitly in `project-brief.md` and continue under the fixed chain.
 
-For graded academic, source-backed written, formal report, literature review, proposal, or dissertation-style work, create `runpro_workspace/10_analysis/rubric-ledger.md` before drafting. Build it from the assignment brief, rubric, marking criteria, teacher feedback, required questions, required format rules, and template obligations.
+For graded academic, source-backed written, formal report, literature review, proposal, or dissertation-style work, create `taskiller_workspace/10_analysis/rubric-ledger.md` before drafting. Build it from the assignment brief, rubric, marking criteria, teacher feedback, required questions, required format rules, and template obligations.
 
 Rubric-ledger rules:
 
@@ -528,7 +528,7 @@ Rubric-ledger rules:
 
 Before execution, determine whether the current folder contents are sufficient to complete the project truthfully and to the required standard.
 
-Record the result in `runpro_workspace/10_analysis/feasibility-check.md`.
+Record the result in `taskiller_workspace/10_analysis/feasibility-check.md`.
 
 The feasibility check should answer:
 
@@ -643,7 +643,7 @@ Before execution, prepare a strict requirement lock from:
 - `project-routing.md`
 - `route-playbook.md`
 
-Record it in `runpro_workspace/10_analysis/approval-gate.md`.
+Record it in `taskiller_workspace/10_analysis/approval-gate.md`.
 
 The requirement lock should include:
 
@@ -758,7 +758,7 @@ Route-specific expectations:
 - `adaptive`: optimize around the real end state and define custom acceptance checks when needed
 - `document`: prioritize structure, requirement coverage, and outward-facing clarity
 - `presentation`: prioritize slide scaffolding, layout viability, visual validation, and use of specialized presentation skills. When editable PPT or PPTX output is required, default to the `PowerPoint` skill unless the task explicitly calls for a different presentation workflow.
-- For visually polished PPT/PPTX work, especially when the user asks for beauty, design quality, repeated checking, or a non-generic deck, use `$pptpro` as the strict presentation design workflow and source of truth before final handoff. Do not apply a weaker local Runpro PPT standard. Load its design system and slide recipes, assign every revised slide a recipe, avoid serif fonts and beige/cream AI-looking backgrounds unless explicitly required or already dictated by the provided template, use softer rounded rectangles for new cards/callouts/panels unless the template requires square geometry, use concept/flow/case/layout recipes instead of generic bullets, avoid repeated same-structure content slides, add real source visuals/structures for book/report/source-led decks when available, create a visual enrichment plan for text-heavy decks, use relevant supporting images or generated illustrations when they would make the deck more concrete or visually powerful, use Codex/ChatGPT built-in image generation with the current latest image tool/model for custom content visuals when no real or traceable image fits, keep source-log/audit/provenance bookkeeping out of visible slides and scripts, make media slides look like case/event analysis rather than ordinary text cards, and for scientific paper or journal-club decks also classify the source type, choose a figure-led argument arc, use conclusion-style titles, and avoid redundant multi-panel evidence. Add script-to-slide markers, render previews, manually inspect them, repair overflow or confusing design marks, and run `pptpro_audit.py --render --strict` before handoff.
+- For visually polished PPT/PPTX work, especially when the user asks for beauty, design quality, repeated checking, or a non-generic deck, use `$pptpro` as the strict presentation design workflow and source of truth before final handoff. Do not apply a weaker local Taskiller PPT standard. Load its design system and slide recipes, assign every revised slide a recipe, avoid serif fonts and beige/cream AI-looking backgrounds unless explicitly required or already dictated by the provided template, use softer rounded rectangles for new cards/callouts/panels unless the template requires square geometry, use concept/flow/case/layout recipes instead of generic bullets, avoid repeated same-structure content slides, add real source visuals/structures for book/report/source-led decks when available, create a visual enrichment plan for text-heavy decks, use relevant supporting images or generated illustrations when they would make the deck more concrete or visually powerful, use Codex/ChatGPT built-in image generation with the current latest image tool/model for custom content visuals when no real or traceable image fits, keep source-log/audit/provenance bookkeeping out of visible slides and scripts, make media slides look like case/event analysis rather than ordinary text cards, and for scientific paper or journal-club decks also classify the source type, choose a figure-led argument arc, use conclusion-style titles, and avoid redundant multi-panel evidence. Add script-to-slide markers, render previews, manually inspect them, repair overflow or confusing design marks, and run `pptpro_audit.py --render --strict` before handoff.
 - For template-bound or partial-scope presentations, apply `$pptpro` to the revised range while preserving the rest of the deck. The final PPTX should normally remain the complete deck. If preserved slides are image-only or otherwise not compatible with strict audit checks, create an audit-only copy for the revised range, run PPTPRO strict audit on that copy, then render and inspect the final full deck to verify assembly, slide order, and preserved pages.
 - `code`: prioritize a runnable or buildable path, core functionality, and technical validation
 - `data`: prioritize reproducible transformations, sheet or pipeline correctness, and summary outputs
@@ -830,7 +830,7 @@ Before handoff, run a detailed completion audit against:
 - route-specific validation requirements
 - actual output files
 
-Record the audit in `runpro_workspace/10_analysis/final-audit.md`.
+Record the audit in `taskiller_workspace/10_analysis/final-audit.md`.
 
 The completion audit must answer, item by item:
 
@@ -883,9 +883,9 @@ Load [final-checklist.md](./references/final-checklist.md) before declaring the 
 The project is only complete when:
 
 - the required deliverable exists
-- `runpro_workspace/submission/` contains only the project-required submission contents
+- `taskiller_workspace/submission/` contains only the project-required submission contents
 - for written deliverables with no explicitly required final format, the primary submission artifact is `.docx`
-- markdown, template-reference, style-reference, draft, and duplicate helper files are kept out of `runpro_workspace/submission/` unless explicitly required
+- markdown, template-reference, style-reference, draft, and duplicate helper files are kept out of `taskiller_workspace/submission/` unless explicitly required
 - hard requirements are covered
 - all required assignment parts are completed unless a true blocker is documented
 - the initial feasibility verdict has been satisfied, or any unresolved item is documented as a true blocker
@@ -964,12 +964,12 @@ For high-achievement projects:
 
 Direct invocation should use the skill name explicitly:
 
-- `用 $runpro 处理 /absolute/path/to/project`
-- `Use $runpro on /absolute/path/to/project and drive it to a handoff-ready state`
+- `用 $taskiller 处理 /absolute/path/to/project`
+- `Use $taskiller on /absolute/path/to/project and drive it to a handoff-ready state`
 
 If the project path is already obvious from context, the shortest usable form is:
 
-- `$runpro 处理这个项目目录`
+- `$taskiller 处理这个项目目录`
 
 ## Autonomy Rules
 

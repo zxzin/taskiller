@@ -43,7 +43,7 @@ For literature-driven writing:
 1. search for real literature first
 2. confirm there are enough relevant sources
 3. prefer recent, high-signal, field-recognized sources instead of arbitrary older citations
-4. record them in `runpro_workspace/10_analysis/source-log.md`
+4. record them in `taskiller_workspace/10_analysis/source-log.md`
 5. only then begin synthesis writing
 
 Never invent:

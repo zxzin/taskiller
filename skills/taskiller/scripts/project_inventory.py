@@ -26,7 +26,7 @@ IGNORE_DIRS = {
     ".turbo",
 }
 
-DEFAULT_GENERATED_WORKSPACE = "runpro_workspace"
+DEFAULT_GENERATED_WORKSPACE = "taskiller_workspace"
 
 CATEGORY_EXTENSIONS = {
     "text": {

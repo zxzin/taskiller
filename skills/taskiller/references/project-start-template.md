@@ -2,7 +2,7 @@
 
 Use this template when the user starts a new project or when the project folder does not already contain a clear kickoff note.
 
-Create `runpro_workspace/10_analysis/project-intake.md` in this shape:
+Create `taskiller_workspace/10_analysis/project-intake.md` in this shape:
 
 ```text
 # Project Intake

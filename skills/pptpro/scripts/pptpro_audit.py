@@ -48,7 +48,7 @@ INTERNAL_WORKFLOW_TEXT_PATTERNS = (
     re.compile(r"\bfinal[-\s]?audit\b", re.IGNORECASE),
     re.compile(r"\bworking[-\s]?audit\b", re.IGNORECASE),
     re.compile(r"\brequirement[-\s]?ledger\b", re.IGNORECASE),
-    re.compile(r"\brunpro_workspace\b", re.IGNORECASE),
+    re.compile(r"\btaskiller_workspace\b", re.IGNORECASE),
     re.compile(r"\bpptpro[_\s-]?audit\b", re.IGNORECASE),
     re.compile(r"\bfull\s+source\s+provenance\b", re.IGNORECASE),
     re.compile(r"\bimage\s+credits?\s+(?:are|is)\s+recorded\b", re.IGNORECASE),

@@ -59,7 +59,7 @@ Load the PPTPRO skill body and, for designed PPT/PPTX work, also load:
 - `$CODEX_HOME/skills/pptpro/references/design-system.md`
 - `$CODEX_HOME/skills/pptpro/references/slide-recipes.md`
 
-PPTPRO is the source of truth for visually polished PPT/PPTX production quality. Runpro presentation routing, planning, final-audit records, and handoff checks must not apply a weaker local PPT standard than the loaded PPTPRO skill.
+PPTPRO is the source of truth for visually polished PPT/PPTX production quality. Taskiller presentation routing, planning, final-audit records, and handoff checks must not apply a weaker local PPT standard than the loaded PPTPRO skill.
 
 Carry these defaults into the requirement lock unless the assignment or user says otherwise:
 

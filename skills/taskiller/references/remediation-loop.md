@@ -69,7 +69,7 @@ Prioritize repairs in this order:
 
 ## Logging Rule
 
-Record meaningful failures and repairs in `runpro_workspace/10_analysis/remediation-log.md`.
+Record meaningful failures and repairs in `taskiller_workspace/10_analysis/remediation-log.md`.
 
 Suggested fields:
 

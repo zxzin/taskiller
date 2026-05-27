@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Initialize a project workspace for runpro.
+Initialize a project workspace for taskiller.
 
 Creates working directories, generates a project inventory, and writes the
 standard state files if they do not already exist.
@@ -16,7 +16,7 @@ from generate_route_playbook import route_playbook_to_markdown
 from project_inventory import build_inventory, inventory_to_markdown
 
 
-DEFAULT_WORKSPACE_DIR = "runpro_workspace"
+DEFAULT_WORKSPACE_DIR = "taskiller_workspace"
 DELIVERY_DIR = "submission"
 LEGACY_DELIVERY_DIRS = ("90_delivery", "submisSiOn")
 
@@ -384,7 +384,7 @@ def migrate_legacy_delivery_dir(workspace_root: Path) -> None:
 
         delivery_dir = workspace_root / DELIVERY_DIR
         if legacy_name.lower() == DELIVERY_DIR.lower():
-            temp_dir = workspace_root / "__runpro_submission_tmp__"
+            temp_dir = workspace_root / "__taskiller_submission_tmp__"
             legacy_dir.rename(temp_dir)
             temp_dir.rename(delivery_dir)
         else:
@@ -437,12 +437,12 @@ def main() -> None:
     parser.add_argument(
         "--force-inventory",
         action="store_true",
-        help="Regenerate runpro_workspace/10_analysis/project-inventory.md even if it already exists",
+        help="Regenerate taskiller_workspace/10_analysis/project-inventory.md even if it already exists",
     )
     parser.add_argument(
         "--workspace-dir",
         default=DEFAULT_WORKSPACE_DIR,
-        help="Subdirectory under the project root where runpro should place all generated working folders",
+        help="Subdirectory under the project root where taskiller should place all generated working folders",
     )
     args = parser.parse_args()
 

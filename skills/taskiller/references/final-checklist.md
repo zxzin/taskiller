@@ -17,8 +17,8 @@ Do not declare completion until this checklist has been reviewed.
 
 ## Requirement Coverage
 
-- `runpro_workspace/10_analysis/requirement-ledger.md` exists and captures explicit file-based requirements rather than only a high-level summary.
-- The final output matches the approved requirement lock in `runpro_workspace/10_analysis/approval-gate.md`.
+- `taskiller_workspace/10_analysis/requirement-ledger.md` exists and captures explicit file-based requirements rather than only a high-level summary.
+- The final output matches the approved requirement lock in `taskiller_workspace/10_analysis/approval-gate.md`.
 - All hard requirements are either satisfied or explicitly marked as unresolved.
 - All required assignment parts are complete unless a true blocker is documented.
 - Required structure, section order, methodology emphasis, template bindings, and output format were respected.
@@ -34,9 +34,9 @@ Do not declare completion until this checklist has been reviewed.
 
 - The execution plan reflects what was actually done.
 - The active gate progressed to final delivery state.
-- `runpro_workspace/10_analysis/feasibility-check.md` exists and records whether the current materials were sufficient.
+- `taskiller_workspace/10_analysis/feasibility-check.md` exists and records whether the current materials were sufficient.
 - The delivery checklist was updated during the work.
-- `runpro_workspace/10_analysis/final-audit.md` exists and records a detailed completion review.
+- `taskiller_workspace/10_analysis/final-audit.md` exists and records a detailed completion review.
 - The final audit records an internal quality score, target threshold, and estimated score band.
 - The final audit records an estimated external score band and why the work is or is not plausibly in the `90+` range.
 - Created or modified outputs are listed clearly in the final summary.
@@ -54,7 +54,7 @@ Do not declare completion until this checklist has been reviewed.
 - For academic or source-backed graded written submissions, `scripts/validate_final_audit.py --require-academic-quality-audit` passes or the limitation is stated explicitly.
 - For source-backed presentation work, `scripts/validate_final_audit.py --require-presentation-source-audit` passes or the limitation is stated explicitly.
 - For high-risk or graded submission work, `strict mode` was explicitly used and its fixed validation chain was completed.
-- The route-specific validations from `runpro_workspace/10_analysis/project-routing.md` were checked.
+- The route-specific validations from `taskiller_workspace/10_analysis/project-routing.md` were checked.
 - The initial feasibility verdict was respected: either the project was completeable with the available materials, or the missing required inputs were resolved before handoff.
 - Each locked requirement was evaluated explicitly, not assumed covered by a high-level impression.
 - Each explicit item in `requirement-ledger.md` was evaluated explicitly rather than inferred from a broad summary.
@@ -66,14 +66,14 @@ Do not declare completion until this checklist has been reviewed.
 - The audit judges the submission plausibly within the `90+` range, or a true blocker is documented explaining why that target could not be reached.
 - The result is at least in `Ready for review` state before handoff.
 - The `Estimated Score Band` reflects the most conservative credible current estimate rather than an optimistic upside scenario.
-- For literature or research-backed work, `runpro_workspace/10_analysis/source-log.md` exists and reflects real sources actually used.
+- For literature or research-backed work, `taskiller_workspace/10_analysis/source-log.md` exists and reflects real sources actually used.
 - For literature or research-backed work, `scripts/validate_source_log.py` passes or the limitation is stated explicitly.
 - For literature-driven work, the source base is primarily recent, roughly within the last five years, unless older sources are clearly justified as seminal, foundational, or explicitly required.
 - For literature-driven work, source quality was considered, with preference for higher-impact, core-journal, review, guideline, or otherwise authoritative sources when available.
-- For graded academic written submissions, `runpro_workspace/10_analysis/rubric-ledger.md` exists and maps rubric, brief, teacher feedback, required questions, and format criteria to visible draft locations.
+- For graded academic written submissions, `taskiller_workspace/10_analysis/rubric-ledger.md` exists and maps rubric, brief, teacher feedback, required questions, and format criteria to visible draft locations.
 - For graded academic written submissions, every central rubric item is `pass` or explicitly blocked; no high-weight item remains partial, failed, or not assessable at handoff.
 - For assignment-style document work, academic standards were checked as a strict gate, including citation style, in-text/reference matching, reference metadata, formatting, figure/table conventions, paragraph reasoning, headings, word count, appendices, and academic register where relevant.
-- For source-backed written submissions, `runpro_workspace/10_analysis/source-claim-audit.md` exists and maps major factual, empirical, evaluative, and comparative claims to specific source support.
+- For source-backed written submissions, `taskiller_workspace/10_analysis/source-claim-audit.md` exists and maps major factual, empirical, evaluative, and comparative claims to specific source support.
 - For source-backed written submissions, major claims preserve measured outcome, direction, magnitude, units, sample, method, population, date range, and conditions when they affect interpretation.
 - For source-backed written submissions, unsupported, overbroad, mismatched, decorative, or not-assessable citations were repaired, narrowed, replaced, or removed before handoff.
 - For assignment-style document work, citation style and in-text/reference-list consistency were checked.
@@ -145,12 +145,12 @@ Do not declare completion until this checklist has been reviewed.
 
 ## Final Handoff
 
-- `runpro_workspace/10_analysis/final-summary.md` exists.
+- `taskiller_workspace/10_analysis/final-summary.md` exists.
 - The final handoff names key files or output locations clearly.
 - The project is not handed off with known fixable failures.
 - The project is not handed off while any audit item is still marked incomplete, failed, or "to be fixed."
-- `runpro_workspace/submission/` contains only the actual required submission contents and no extra process files.
-- `runpro_workspace/submission/` does not contain draft `.md` files, reference templates, style exemplars, or duplicate helper exports unless they are explicitly required for submission.
+- `taskiller_workspace/submission/` contains only the actual required submission contents and no extra process files.
+- `taskiller_workspace/submission/` does not contain draft `.md` files, reference templates, style exemplars, or duplicate helper exports unless they are explicitly required for submission.
 - The handoff does not claim certainty where evidence is missing.
 - The handoff language distinguishes `no blocking issues` from `no remaining issues` and does not overstate the cleanliness of the result.
 - The final response clearly states one of:
